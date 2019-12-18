@@ -1,33 +1,29 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
-import {SafeAreaView, StyleSheet, ScrollView, StatusBar} from 'react-native';
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React from 'react';
+import {SafeAreaView, StyleSheet, ScrollView, StatusBar} from 'react-native';
 
+import HomeHeader from './HomeHeader';
+import SipCalculator from './SipCalculator';
+import SipBody from './SipBody';
 import OneCalculator from './OneCalculator';
+
+import {Container} from 'native-base';
 
 export default class App extends React.Component {
   render() {
-    return <OneCalculator />;
+    return (
+      <Container>
+        <HomeHeader />
+        <OneCalculator />
+        <SipCalculator />
+        <SipBody />
+      </Container>
+    );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'success',
+    backgroundColor: 'skyblue',
     height: '100%',
   },
   paragraph: {
