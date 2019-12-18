@@ -12,6 +12,7 @@ import {
   List,
   Right,
   Icon,
+  Button,
 } from 'native-base';
 
 export default class SipBody extends React.Component {
@@ -36,6 +37,10 @@ export default class SipBody extends React.Component {
             <Input style={{borderWidth: 2, width: 150}}>21%</Input>
           </Right>
         </ListItem>
+
+        <Button block success>
+          <Text>calculate</Text>
+        </Button>
       </List>
     );
   }
