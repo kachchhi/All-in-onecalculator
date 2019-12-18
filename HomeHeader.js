@@ -1,10 +1,6 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, ScrollView, StatusBar} from 'react-native';
 
-import HomeHeader from './HomeHeader';
-import SipCalculator from './SipCalculator';
-import SipBody from './SipBody';
-
 import {
   Container,
   Header,
@@ -22,14 +18,20 @@ import {
   card,
 } from 'native-base';
 
-export default class App extends React.Component {
+export default class HomeHeader extends React.Component {
   render() {
     return (
-      <Container>
-        <HomeHeader />
-        <SipCalculator />
-        <SipBody />
-      </Container>
+      <Header>
+        <Left>
+          <Button>
+            <Icon name="menu" />
+          </Button>
+        </Left>
+
+        <Body>
+          <Title style={{margin: 10}}>SipCalculator</Title>
+        </Body>
+      </Header>
     );
   }
 }
