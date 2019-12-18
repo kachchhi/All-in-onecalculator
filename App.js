@@ -4,29 +4,16 @@ import {SafeAreaView, StyleSheet, ScrollView, StatusBar} from 'react-native';
 import HomeHeader from './HomeHeader';
 import SipCalculator from './SipCalculator';
 import SipBody from './SipBody';
+import OneCalculator from './OneCalculator';
 
-import {
-  Container,
-  Header,
-  Content,
-  Body,
-  Text,
-  Label,
-  Item,
-  Button,
-  Icon,
-  Title,
-  Left,
-  Right,
-  View,
-  card,
-} from 'native-base';
+import {Container} from 'native-base';
 
 export default class App extends React.Component {
   render() {
     return (
       <Container>
         <HomeHeader />
+        <OneCalculator />
         <SipCalculator />
         <SipBody />
       </Container>
