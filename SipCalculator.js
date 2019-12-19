@@ -30,7 +30,10 @@ export default class SipCalculator extends React.Component {
       <Container>
         <Header>
           <Left>
-            <Button>
+            <Button
+              onPress={() => {
+                this.props.navigation.toggleDrawer();
+              }}>
               <Icon name="menu" />
             </Button>
           </Left>
