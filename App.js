@@ -1,10 +1,7 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, ScrollView, StatusBar} from 'react-native';
+import {StyleSheet} from 'react-native';
 
-import HomeHeader from './HomeHeader';
-import SipCalculator from './SipCalculator';
-import SipBody from './SipBody';
-import OneCalculator from './OneCalculator';
+import LoanCalculator from './LoanCalculator';
 
 import {Container} from 'native-base';
 
@@ -12,10 +9,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Container>
-        <HomeHeader />
-        <OneCalculator />
-        <SipCalculator />
-        <SipBody />
+        <LoanCalculator />
       </Container>
     );
   }
