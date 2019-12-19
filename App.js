@@ -1,5 +1,7 @@
 import React from 'react';
-import {} from 'react-native';
+import {StyleSheet} from 'react-native';
+
+import LoanCalculator from './LoanCalculator';
 
 import SipCalculator from './SipCalculator';
 
@@ -11,6 +13,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Container>
+        <LoanCalculator />
         {/* <OneCalculator /> */}
         <SipCalculator />
       </Container>
