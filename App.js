@@ -3,6 +3,10 @@ import {StyleSheet} from 'react-native';
 
 import LoanCalculator from './LoanCalculator';
 
+import SipCalculator from './SipCalculator';
+
+// import OneCalculator from './OneCalculator';
+
 import {Container} from 'native-base';
 
 export default class App extends React.Component {
@@ -10,20 +14,9 @@ export default class App extends React.Component {
     return (
       <Container>
         <LoanCalculator />
+        {/* <OneCalculator /> */}
+        <SipCalculator />
       </Container>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: 'skyblue',
-    height: '100%',
-  },
-  paragraph: {
-    fontSize: 10,
-    fontWeight: 'bold',
-
-    flex: 1,
-  },
-});
